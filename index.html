@@ -5,12 +5,34 @@
   <title>Exercício</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
-<body>
+<body style="width: 900px;align-content: center;margin: auto;min-width: 900px">
   <div id="app"></div>
 
   <script src="bundle.js"></script>
   <script>
     app(document.getElementById('app'));
   </script>
+<div style="horiz-align: center: center;width: 100%">
+  <input type="text" align="center" style="width: 50%" id="textoPesquisaNome"/>
+  <button id="pesquisar" onclick="app.pesquisar()">Pesquisar</button>
+  <button id="showAll" onclick="app.mostrarTodasSelecoes()">Todas</button>
+  <button id="bTCriar" onclick="app.criar()">criar</button>
+</div>
+<div id="formSelecao" style="display: none; border: 1px solid;position: relative">
+  <label>Nome</label>
+  <input type="text" width="80px" align="center" id="cs_nome"/>
+  <label>grupo</label>
+  <input type="text" width="80px" align="center" id="cs_grupo"/>
+  <label>continente</label>
+  <input type="text" width="80px" align="center" id="cs_continente"/>
+  <button onclick="" id="btnSalvar">Salvar</button>
+</div>
+<div id="conteudo" >
+  <table border="1" id="table">
+    <tbody id="tableContent">
+
+    </tbody>
+  </table>
+</div>
 </body>
 </html>

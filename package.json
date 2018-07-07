@@ -12,6 +12,7 @@
   "dependencies": {},
   "devDependencies": {
     "rollup": "^0.56.5",
+    "rollup-plugin-node-resolve": "^3.3.0",
     "rollup-plugin-nodent": "^0.2.2"
   }
 }
